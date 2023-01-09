@@ -11,7 +11,7 @@ require 'JSON'
 # end
 
 # Keyword arguments
-def foo(a, key:10)
+def foo(a, key: 10)
   p [a, key]
 end
 
@@ -25,7 +25,7 @@ end
 bar(key: 42)
 
 # Numbered Parameters
-p [1, 2, 3].map {_1 * 2}
+p [1, 2, 3].map { _1 * 2 }
 # => [2, 4, 6]
 
 # Argument Forwarding (automatically passes arguments to another method call)
@@ -34,8 +34,8 @@ def foo(...)
 end
 
 # Begin / End-less ranges
-p (1..)  # Endless range (1 and forever)
-p (..10) # Negative infinity to 10
+p(1..)  # Endless range (1 and forever)
+p(..10) # Negative infinity to 10
 
 # Enumerable#tally
 # Enumerable.filter_map
@@ -44,11 +44,11 @@ p (..10) # Negative infinity to 10
 # Pipeline Operator
 def pipeline_me
   (1..100)
-  .map {|value| rand(value)}
-  .sort
-  .reverse
-  .take(5)
-  .display
+    .map { |value| rand(value) }
+    .sort
+    .reverse
+    .take(5)
+    .display
 end
 
 # Method Reference Operator

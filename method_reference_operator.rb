@@ -22,8 +22,7 @@ another_method.call
 
 unbound_method = MethodReferenceOp.instance_method :bar
 
-yet_another_method = self.method(:baz)
+yet_another_method = method(:baz)
 yet_another_method.call
 
 bound_method = unbound_method.bind_call(MethodReferenceOp.new)
-

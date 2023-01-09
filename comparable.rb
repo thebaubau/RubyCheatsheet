@@ -1,8 +1,8 @@
 class Card
   include Comparable
 
-  SUITS        = %w(S H D C).freeze
-  RANKS        = %w(2 3 4 5 6 7 8 9 10 J Q K A).freeze
+  SUITS        = %w[S H D C].freeze
+  RANKS        = %w[2 3 4 5 6 7 8 9 10 J Q K A].freeze
   SUITS_RANKS = SUITS.each_with_index.to_h
   RANKS_SCORES = RANKS.each_with_index.to_h
 
@@ -13,7 +13,7 @@ class Card
 
   def self.from_str(s) = new(s[0], s[1..])
 
-  def to_s() = "#{@suit}#{@rank}"
+  def to_s = "#{@suit}#{@rank}"
 
   def precedence
     [SUITS_RANKS[@suit], RANKS_SCORES[@rank]]

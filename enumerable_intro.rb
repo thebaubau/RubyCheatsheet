@@ -1,4 +1,4 @@
-require './comparable.rb'
+require './comparable'
 
 class Hand
   include Enumerable
@@ -24,4 +24,3 @@ p royal_flush.reject { |card| card <= Card.from_str('SQ') }.join(', ')
 
 p royal_flush
 p royal_flush.to_s
-

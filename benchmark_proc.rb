@@ -8,7 +8,7 @@ n = 500_000
 Benchmark.bm do |benchmark|
   benchmark.report('Hash#to_proc  ') do
     n.times do
-      %i(a b c).map(&hash)
+      %i[a b c].map(&hash)
     end
   end
 
@@ -20,12 +20,12 @@ Benchmark.bm do |benchmark|
 
   benchmark.report('Hash Values At') do
     n.times do
-      hash.values_at(%i(a b c))
+      hash.values_at(%i[a b c])
     end
   end
 end
 
-p hash.values_at(*%i(a b c))
+p hash.values_at(*%i[a b c])
 
 Benchmark.bm do |benchmark|
   benchmark.report('Instance Adder') do

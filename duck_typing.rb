@@ -2,6 +2,7 @@ class Duck
   def speak
     puts 'Quack!'
   end
+
   def fly
     puts 'Takes off!'
   end

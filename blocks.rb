@@ -37,7 +37,7 @@ p map_implied([3, 2, 1]) { |v| v + 1 }
 
 # Ampersand (&) and block funtions
 
-add_one = -> a { a + 1 }
+add_one = ->(a) { a + 1 }
 
 p map([1, 2, 3], &add_one)
 
@@ -53,4 +53,3 @@ p map_implied([1, 2, 3])    # => no block given (yield) (LocalJumpError) unless 
 # Can be guarded against by returning the original list if the block is not given (see map and map_implied methods)
 
 p [1, 2, 3].map # Returns and Enumerator
-
