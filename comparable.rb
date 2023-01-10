@@ -26,14 +26,14 @@ def show_hand(cards) = cards.map(&:to_s).join(', ')
 
 cards = ('2'..'8').map { Card.new('S', _1) }.shuffle
 
-# p show_hand(cards)
-# p show_hand(cards.sort)
-# p show_hand(cards.max(2))
-# p show_hand(cards.minmax)
-# p cards.min.to_s
+p show_hand(cards)
+p show_hand(cards.sort)
+p show_hand(cards.max(2))
+p show_hand(cards.minmax)
+p cards.min.to_s
 
-# p Card::RANKS_SCORES
-# one = Card.new('S', '1')
-# two = Card.new('C', '2')
+p Card::RANKS_SCORES
+one = Card.new('S', '1')
+two = Card.new('C', '2')
 
-# p one <=> two
+p one <=> two
