@@ -1,0 +1,14 @@
+class Card
+  RANKS: Array[String]
+  SUITS: untyped
+  RANKS_SCORES: untyped
+  SUITS_RANKS: untyped
+
+  @rank: String
+
+  @suit: untyped
+
+  def self.from_str: -> Card
+
+  def precedence: -> untyped
+end

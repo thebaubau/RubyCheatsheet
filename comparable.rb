@@ -11,7 +11,7 @@ class Card
     @rank = rank
   end
 
-  def self.from_str(s) = new(s[0], s[1..])
+  def self.from_str(str) = new(str[0], str[1..])
 
   def to_s = "#{@suit}#{@rank}"
 
