@@ -6,7 +6,7 @@ yet_another_arr = [1, 'a', 2]
 
 p arr.find { |v| v == 2 } # => 2
 p arr.find { |v| v == 5 } # => nil
-p arr.find {-> { 6 }}     # => 1 - WTH
+p arr.find { -> { 6 } } # => 1 - WTH
 
 # .find_index
 

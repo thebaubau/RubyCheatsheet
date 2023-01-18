@@ -1,12 +1,18 @@
 {
-  "ruby.format": "rubocop",
-  "ruby.useBundler": true,
-  "ruby.lint": {
-    "rubocop": {
-      "useBundler": true
-    },
-    "reek": {
-      "useBundler": true
-    }
-  }
+//   "ruby.useBundler": true,
+//   "ruby.useLanguageServer": true,
+//   "ruby.lint": {
+//       "rubocop": {
+//           "useBundler": true,
+//           "useServer": true,
+//       }
+//   },
+//   "ruby.intellisense": "rubyLocate",
+//   "ruby.locate": {
+//       "exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}",
+//       "include": "**/*.rb"
+//   },
+//   // "ruby.codeCompletion": "rcodetools",
+//   "ruby.format": "rubocop",
+//   "solargraph.useBundler": true,
 }

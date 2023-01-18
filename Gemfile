@@ -2,4 +2,5 @@ source 'https://rubygems.org'
 
 gem 'awesome_print'
 gem 'rbs'
-gem 'rubocop'
+gem 'rubocop', require: false
+gem 'solargraph'
