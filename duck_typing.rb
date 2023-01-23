@@ -8,7 +8,7 @@ class Duck
   end
 end
 
-class Dog
+class Skunk
   def speak
     puts 'Woof!'
   end
@@ -23,6 +23,6 @@ def take_flight(animal)
 end
 
 make_noise(Duck.new)
-make_noise(Dog.new)
+make_noise(Skunk.new)
 take_flight(Duck.new)
-take_flight(Dog.new)
+take_flight(Skunk.new)

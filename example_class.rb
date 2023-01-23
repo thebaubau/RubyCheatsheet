@@ -1,6 +1,6 @@
-# Artist Class
+# frozen_string_literal: true
 
-# To this
+# Very artistic
 class Artist
   attr_reader :name
 

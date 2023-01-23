@@ -37,8 +37,6 @@ Style/Documentation:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
-    - 'duck_typing.rb'
-    - 'method_reference_operator.rb'
 
 # Offense count: 11
 # This cop supports unsafe autocorrection (--autocorrect-all).

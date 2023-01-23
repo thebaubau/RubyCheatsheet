@@ -11,12 +11,12 @@ require 'JSON'
 # end
 
 # Keyword arguments
-def foo(a, key: 10)
+def foobar(a, key: 10)
   p [a, key]
 end
 
-# foo(key: 5)
-# => `foo': wrong number of arguments (given 0, expected 1) (ArgumentError)
+# foobar(key: 5)
+# => `foobar': wrong number of arguments (given 0, expected 1) (ArgumentError)
 
 def bar(opt = {}, key: 10)
   p [opt, key]
